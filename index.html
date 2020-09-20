@@ -2,17 +2,48 @@
 
 <html>
     <head>
-        <title></title>
+        <title>Musicle</title>
         <meta charset="UTF-8">
         <script href = "views/js/Main.js"></script>
+        <script src="views/js/playlistApp.js"></script>
         <style src="views/css/style.css"></style>
     </head>
 
     <body>
-        <h1>Hello World! I am Musicle!</h1>
-        <h2>La la la</h2>
-        <p>It's a winter wonderland! :)</p>
-        <div id = "root"></div>
+        <div id="profile" class="templates">
+            <!-- Template for a generic profile-->
+            <div class="column1">
+                <p id="username"></p>
+                <p id="joinDate"></p>
+                <p id="Bio"></p>
+                <!-- Could probably use more stuff here but this is what I could think of at the moment-->
+            </div>
+        </div>
+        <div id="playlist" class="templates">
+            <!-- Template for a generic playlist-->
+            <p id="albumTitle">Le Album Title</p>
+            <table class="songList" class="templates">
+                <tr class="song" class="templates"> <!-- I don't exactly know what metadata you can extract using Spotify API but this should be a good list-->
+                    <td class="songName"></td>
+                    <td class="songArtist"></td>
+                    <td class="songGenre"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="feedback" class="templates">
+            <!-- Template for commenting / voting-->
+            <table id="vote" class="templates">
+                <tr id="voteRow">
+                    <td><!--Upvote Image should probably go here that is clickable, will add this in later--></td>
+                    <td><p id="upvoteCounter"></p></td>
+                    <td><!--Upvote Image should probably go here that is clickable, will add this in later--></td>
+                    <td><p id="downvoteCounter"></p></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "root">
+            <!-- I don't really know what this is used for lol-->
+        </div>
     </body>
 
     <footer>
