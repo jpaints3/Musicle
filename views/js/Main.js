@@ -6,11 +6,17 @@ import PlaylistApp from './PlaylistApp.js';
 class Main extends Component{
     render(){
         return (
-            <div>
-                <PlaylistApp/>
-            </div>
+            <playlist/>
         );
     }
+}
+
+const playlist = ({}) => {
+    return (
+        <div>
+            <p>Am I working?</p>
+        </div>
+    );
 }
 
 
