@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jpaints3/Musicle#readme",
   "dependencies": {
-    "react": "^16.13.1"
+    "commonjs": "0.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
