@@ -7,5 +7,5 @@ Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
     print("Musicle is running on port", PORT)
-    print("You can see the local host here 127.0. 0.1.")
+    print("You can see the local host here http://127.0.0.1:8080/")
     httpd.serve_forever()
